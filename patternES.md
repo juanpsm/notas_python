@@ -13,8 +13,7 @@ lo malo es que no explican para que es ese numero solo dice
 ```
  entonces veamos donde lo usa
 
-En el archivo [`__init__.py`](https://github.com/clips/pattern/blob/master/pattern/text/es/__init__.py)
-en la [parte](https://github.com/clips/pattern/blob/5b85d998c30ddc6772b56310713530224466083a/pattern/text/es/__init__.py#L271)
+En el archivo [`__init__.py`](https://github.com/clips/pattern/blob/master/pattern/text/es/__init__.py)en la [parte](https://github.com/clips/pattern/blob/5b85d998c30ddc6772b56310713530224466083a/pattern/text/es/__init__.py#L271)
 ```python
 def suggest(w):
     """ Returns a list of (word, confidence)-tuples of spelling corrections.
@@ -28,7 +27,7 @@ spelling = Spelling(
         path = os.path.join(MODULE, "es-spelling.txt")
 )
 ```
-esuna instancia de esa clae que la importa [de](https://github.com/clips/pattern/blob/5b85d998c30ddc6772b56310713530224466083a/pattern/text/es/__init__.py#L44)
+es una instancia de esa clase que la importa [de](https://github.com/clips/pattern/blob/5b85d998c30ddc6772b56310713530224466083a/pattern/text/es/__init__.py#L44)
 ```python
 # Import spelling base class.
 from pattern.text import (
@@ -108,10 +107,11 @@ lista = list(pattern.es.spelling.keys())
 mas_largo = max(lista, key=len)
 print(mas_largo,' - ', len(mas_largo))
 ```
-nos da `bienintencionadamente  -  21` pero con lexicon obtenemos:
+nos da 
+`bienintencionadamente  -  21`
+pero con lexicon obtenemos:
 `.......................................................................  -  71`
 Es gracioso que sin la `key=len` da 🙀 :scream_cat:
-
 Perdón, seguimos,
 ```Python
 from collections import Counter
@@ -173,7 +173,7 @@ edainiai.lt;, www.lfp.es;, www.mercedaragon.org;, www.mercedarios.cl;, www.merce
 osovce.sk;, www.odemira.net;, www.samadegrado.es;, www.startalk.ch;,
 
 ```
-esto quiere decir que exepto esas cosas raras que estan ahi todo lo demas son palabras que tienen su respectivo tag.
+Esto quiere decir que exepto esas cosas raras que estan ahi todo lo demas son palabras que tienen su respectivo tag.
 Por lo tanto para filtrar deberiamos buscar que esté en alguno de los dos conjuntos _spelling_ o _lexicon_ y si es asi lo tageamos con uno de los dos sistemas
 ```python
 from pattern.es import lexicon, spelling, tag
@@ -243,7 +243,7 @@ No se encuentra en pattern.es
 ```
 No es perfecto, ya que algunos terminos específicos no los encuentra y hay que filtrar las mayúsculas, no todas, ya que los **sustantivos propios** en lexicon estan con mayuscula. Pero bueno mejoró.
 
-Ademas hay otra lista mas de palabras: **verbs** que tiene pocas palabras en relación a los otros, pero con mas razon me sirve como fusible para buscar en ella primero que es más rapido.
+Además hay otra lista de palabras: **verbs** que tiene pocas palabras en relación a los otros, pero con mas razónn me sirve como fusible para buscar en ella primero que es más rápido.
 
 ```python
 from pattern.es import verbs, tag, spelling, lexicon
