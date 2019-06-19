@@ -102,7 +102,7 @@ print('Cantidad de palabras en spelling que no estan en lexicon: ',c)
 ![spelling-lexicon](https://user-images.githubusercontent.com/11953173/59746197-c44c1100-924c-11e9-92bd-6b5696e080ce.png)
 
 Como vemos son archivos disjuntos, lexicon tiene simbolos mas raros , pero spelling tambien tiene palabras en otros idiomas y casos raros como por ejemplo no esta 'zanahoria' pero si 'zanahorias'.
-
+Busquemos las entradas más largas de cada archivo:
 ```python
 lista = list(pattern.es.spelling.keys())
 mas_largo = max(lista, key=len)
