@@ -89,7 +89,7 @@ for x in pattern.es.lexicon.keys():
 
 print('Cantidad de palabras en lexicon que no estan en spelling: ',c)
 ```
-***lexicon-spelling.png***
+![lexicon-spelling](https://user-images.githubusercontent.com/11953173/59746190-c1e9b700-924c-11e9-85a9-9d5ba9f4d258.png)
 ```python
 c = 0
 for x in pattern.es.spelling.keys():
@@ -99,7 +99,7 @@ for x in pattern.es.spelling.keys():
 print()
 print('Cantidad de palabras en spelling que no estan en lexicon: ',c)
 ```
-***spelling-lexicon.png***
+![spelling-lexicon](https://user-images.githubusercontent.com/11953173/59746197-c44c1100-924c-11e9-92bd-6b5696e080ce.png)
 
 Como vemos son archivos disjuntos, lexicon tiene simbolos mas raros , pero spelling tambien tiene palabras en otros idiomas y casos raros como por ejemplo no esta 'zanahoria' pero si 'zanahorias'.
 
