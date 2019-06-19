@@ -67,7 +67,7 @@ En el [`__init__.py`](https://github.com/clips/pattern/blob/5b85d998c30ddc6772b5
 lexicon = parser.lexicon # Expose lexicon.
 ```
 Por lo tanto es otro atributo digamos del paquete. Vamos a hacer una prueba, importo pattern "a lo bruto" sin from a ver que imprimen estas cosas:
-```
+```console
 	>>> import pattern.es
 	>>> print(type(pattern.es.spelling))
 	<class 'pattern.text.Spelling'>
@@ -120,7 +120,7 @@ c = Counter(pattern.es.lexicon.values())
 print(c)
 ```
 Si cuento los distintos valores del diccionario veo:
-```
+```console
 Counter({'NP': 23462, 'NCS': 13780, 'AQ': 11017, 'VMI': 9016,
 		 'NCP': 7568, 'Z': 5969, 'VMP': 5259, 'VMN': 2206, 'RG': 1731,
 		 'VMS': 1485, 'VMG': 1258, 'NC': 1082, 'Zu': 441, 'W': 295,
@@ -151,7 +151,7 @@ for x in lexicon:
 	if lexicon[x] != tag(x, tokenize=True, encoding='utf-8',tagset = 'UNIVERSAL')[0][1]:
 		print(x, end=', ')
 ```
-```
+```console
 #11, #12-438-512, #12-439-610, #13, #136, #14, #15, #16, #19, #20, #21, #22, #228, #23, #24, #25, #26, #27, #28, #285, #
 29, #30, #31, #32, #33, #34, #344, #35, #36, #360, #361, #37, #38, #400, #42, #45, #50, #55, #61, #62, #63, #75, #83, #8
 6, #89, #93, #94, #96, $1.99, $13, $150, $200, $29,00, $3,000, $300, $37,000,000.00, $380,9, $4.03, $49, $50, $507,933,0
@@ -195,7 +195,7 @@ else:
 	print('La encontró en spelling')
 	clasificar(palabra)
 ```
-```
+```console
 Camino
 La encontró en lexicon
 [('Camino', 'NCS')]
@@ -275,7 +275,7 @@ while palabra != 'q':
 	palabra = input()
 ```
 
-```
+```console
 BURRO
 La encontró en spelling
 [('BURRO', 'NCS')]
