@@ -7,7 +7,7 @@ tiene un diccionario gigantesco con palabras como clave y un valor numerico por 
 `'ultravioleta': 5`
 
 lo malo es que no explican para que es ese numero solo dice
-```Python
+```
 ;;;   Based on several public domain books from Project Gutenberg
 ;;;   and Wikipedia articles and online Spanish newspaper articles.
 ```
@@ -38,7 +38,7 @@ entonces vamos a [pattern.text](https://github.com/clips/pattern/tree/master/pat
 y chusmeamos la [clase](https://github.com/clips/pattern/blob/5b85d998c30ddc6772b56310713530224466083a/pattern/text/__init__.py#L2601)
 
 Ya se enrrosca un poco... Pero en este cometario
-```python
+```
 # Based on: Peter Norvig, "How to Write a Spelling Corrector", http://norvig.com/spell-correct.html
 ```
 si seguimos el [link](http://norvig.com/spell-correct.html)
