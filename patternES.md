@@ -111,7 +111,9 @@ nos da
 `bienintencionadamente  -  21`
 pero con lexicon obtenemos:
 `.......................................................................  -  71`
+
 Es gracioso que sin la `key=len` da 🙀 :scream_cat:
+
 Perdón, seguimos,
 ```Python
 from collections import Counter
