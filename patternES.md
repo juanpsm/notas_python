@@ -2,11 +2,11 @@
 
 Revisando el repositorio [pattern.es](https://github.com/clips/pattern/tree/master/pattern/text/es)
 me llama la atención el archivo [es-spelling.txt](https://github.com/clips/pattern/blob/master/pattern/text/es/es-spelling.txt)
-tiene un diccionario gigantesco con palabras como clave y un valor numerico por ejemplo
+tiene un diccionario gigantesco con palabras como clave y un valor némerico por ejemplo
 
 `'ultravioleta': 5`
 
-lo malo es que no explican para que es ese numero solo dice
+lo malo es que no explican para que es ese numero, solo dice
 ```
 ;;;   Based on several public domain books from Project Gutenberg
 ;;;   and Wikipedia articles and online Spanish newspaper articles.
@@ -100,7 +100,7 @@ print('Cantidad de palabras en spelling que no estan en lexicon: ',c)
 ```
 ![spelling-lexicon](https://user-images.githubusercontent.com/11953173/59746197-c44c1100-924c-11e9-92bd-6b5696e080ce.png)
 
-Como vemos son archivos disjuntos, lexicon tiene simbolos mas raros , pero spelling tambien tiene palabras en otros idiomas y casos raros como por ejemplo no esta 'zanahoria' pero si 'zanahorias'.
+Como vemos son archivos disjuntos, lexicon tiene símbolos mas raros , pero spelling también tiene palabras en otros idiomas y casos raros como por ejemplo no está 'zanahoria' pero si 'zanahorias'
 Busquemos las entradas más largas de cada archivo:
 ```python
 lista = list(pattern.es.spelling.keys())
@@ -175,8 +175,7 @@ edainiai.lt;, www.lfp.es;, www.mercedaragon.org;, www.mercedarios.cl;, www.merce
 osovce.sk;, www.odemira.net;, www.samadegrado.es;, www.startalk.ch;,
 
 ```
-Esto quiere decir que exepto esas cosas raras que estan ahi todo lo demas son palabras que tienen su respectivo tag.
-Por lo tanto para filtrar deberiamos buscar que esté en alguno de los dos conjuntos _spelling_ o _lexicon_ y si es asi lo tageamos con uno de los dos sistemas
+Esto quiere decir que exepto esas cosas raras que estan ahi todo lo demás son palabras que tienen su respectivo tag. 179 Por lo tanto para filtrar deberíamos buscar que esté en alguno de los dos conjunto _spelling_ o _lexicon_ y si es asi lo tageamos con uno de los dos sistemas
 ```python
 from pattern.es import lexicon, spelling, tag
 
