@@ -22,11 +22,13 @@ Para simular la **Raspberry** se puede usar [VirtualBox](https://www.virtualbox.
    ```
    $ sudo apt-get install python-pip
    $ sudo python -m pip install --upgrade pip setuptools wheel
+   $ sudo pip install Adafruit_DHT
    ```
    Python 3:
    ```
    $ sudo apt-get install python3-pip
    $ sudo python3 -m pip install --upgrade pip setuptools wheel
+   $ sudo pip3 install Adafruit_DHT
    ```
  - [Luma.LED_Matrix: Display drivers for MAX7219, WS2812, APA102](https://luma-led-matrix.readthedocs.io/en/latest/install.html)
    ```
