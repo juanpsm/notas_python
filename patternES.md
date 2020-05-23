@@ -2,7 +2,7 @@
 
 Revisando el repositorio [pattern.es](https://github.com/clips/pattern/tree/master/pattern/text/es)
 me llama la atención el archivo [es-spelling.txt](https://github.com/clips/pattern/blob/master/pattern/text/es/es-spelling.txt)
-tiene un diccionario gigantesco con palabras como clave y un valor némerico por ejemplo
+tiene un diccionario gigantesco con palabras como clave y un valor numérico por ejemplo
 
 `'ultravioleta': 5`
 
